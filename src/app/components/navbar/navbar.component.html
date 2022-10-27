@@ -1,9 +1,11 @@
-<mat-toolbar color="primary">
+<p>
+  <mat-toolbar>
     <mat-toolbar-row>
-        <span>UPAO</span>
-        <span class="example-spacer"></span>
-        <button mat-raised-button [routerLink]="'/home'">Inicio</button>
-        <button mat-raised-button [routerLink]="'/employee'">Empleados</button>
+      <span>Tareas</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" routerLink="/home">
+        <mat-icon>home</mat-icon>
+      </button>
     </mat-toolbar-row>
-
-</mat-toolbar>
+  </mat-toolbar>
+</p>

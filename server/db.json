@@ -2,27 +2,38 @@
   "employees": [
     {
       "id": 1,
-      "name": "Walter Alberto Diaz",
-      "phone": "978024153",
-      "email": "hmendo81@gmail.com"
+      "title": "Task 1",
+      "priority": "Este es el Task1",
+      "date": "14-10-2022",
+      "type": "Progreso"
     },
     {
       "id": 2,
-      "name": "Daniela Lola Saavedra",
-      "phone": "967155005",
-      "email": "danisav66@gmail.com"
+      "title": "Task 2",
+      "priority": "Este es el Task2",
+      "date": "24-10-2022",
+      "type": "Terminado"
     },
     {
-      "name": "Test",
-      "email": "Test@test.com",
-      "phone": "1234567",
-      "id": 3
+      "id": 3,
+      "title": "Task3",
+      "priority": "Este es el Task3",
+      "date": "22-10-2022",
+      "type": "Terminado"
     },
     {
-      "name": "Test",
-      "email": "test2@test2.com",
-      "phone": "pasapfa",
-      "id": 4
+      "id": 4,
+      "title": "Task4",
+      "priority": "Este es el Task4",
+      "date": "22-10-2022",
+      "type": "Terminado"
+    },
+    {
+      "id": 5,
+      "title": "Task5",
+      "priority": "Este es el Task5",
+      "date": "27-10-2022",
+      "type": "Terminado"
     }
   ]
 }

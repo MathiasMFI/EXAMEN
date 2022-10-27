@@ -1,14 +1,38 @@
 /* Structure */
-
+/* Structure */
 table {
-    width: 100%;
+  width: 100%;
 }
 
 .mat-form-field {
-    font-size: 14px;
-    width: 100%;
+  font-size: 14px;
+  width: 100%;
 }
 
 .table-wrapper {
-    padding: 20px;
+  padding: 20px 50px;
+}
+
+.titleCenter{
+text-align: center;
+}
+
+.buttonAñadir{
+background-color: rgb(14, 13, 76);
+padding: 0 12px;
+border-radius: 5px;
+color:rgb(255, 255, 255);
+font-size:14px;
+font-weight: 400;
+outline: none;
+}
+
+.buttonAñadir:hover{
+background-color: rgb(225, 208, 255);
+transition: all 0.5s;
+color:rgb(28, 6, 43);
+}
+
+.busquedaIcon{
+text-emphasis-color: black;
 }
