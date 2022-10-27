@@ -1,0 +1,92 @@
+<div class="row">
+    <div class="col-lg-6">
+        <h2>Agregar Tarea</h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-4">
+        <form [formGroup]="myForm">
+            <div class="col-lg-12">
+                <h4>Título</h4>
+                <mat-form-field appearance="fill">
+                    <input matInput formControlName="title" required>
+                </mat-form-field>
+                <div *ngIf="myForm.get('title')?.hasError('required') && myForm.get('title')?.touched">
+                    <span>Este campo es obligatorio</span>
+                </div>
+                <div *ngIf="myForm.get('title')?.hasError('maxLength')">
+                    <span>Este campo debe tener como maximo 30 caracteres</span>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <h4>Prioridad</h4>
+                    <section class="example-section">
+                        <mat-radio-group > <!--[(ngModel)]="labelPosition"-->
+                            <mat-radio-button class="example-margin" value="after">Alta</mat-radio-button>
+                            <mat-radio-button class="example-margin" value="before">Baja</mat-radio-button>
+                        </mat-radio-group>
+                    </section>
+                <div *ngIf="myForm.get('type')?.hasError('required') && myForm.get('type')?.touched">
+                    <span>Este campo es obligatorio</span>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <h4>Plazo</h4>
+                <mat-form-field appearance="fill" class="example-form-field">
+                    <mat-label>Choose a date</mat-label>
+                    <input matInput [matDatepicker]="datepicker">
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+                    <mat-datepicker #datepicker>
+                        <mat-datepicker-actions>
+                            <button mat-button matDatepickerCancel>Cancel</button>
+                            <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+                        </mat-datepicker-actions>
+                    </mat-datepicker>
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="example-form-field">
+                    <mat-label>Enter a date range</mat-label>
+                    <mat-date-range-input [rangePicker]="rangePicker">
+                        <input matStartDate placeholder="Start date">
+                        <input matEndDate placeholder="End date">
+                    </mat-date-range-input>
+                    <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matSuffix [for]="rangePicker"></mat-datepicker-toggle>
+                    <mat-date-range-picker #rangePicker>
+                    <mat-date-range-picker-actions>
+                        <button mat-button matDateRangePickerCancel>Cancel</button>
+                        <button mat-raised-button color="primary" matDateRangePickerApply>Apply</button>
+                    </mat-date-range-picker-actions>
+                    </mat-date-range-picker>
+                </mat-form-field>
+                <div *ngIf="myForm.get('date')?.hasError('required') && myForm.get('date')?.touched">
+                    <span>Este campo es obligatorio</span>
+                </div>
+            </div>
+            <!--<div class="col-lg-12">
+                <h4>Recordatorio</h4>
+                <mat-form-field appearance="fill">
+                    <mat-label>Telefono</mat-label>
+                    <input matInput formControlName="phone" required>
+                </mat-form-field>
+                <div *ngIf="myForm.get('phone')?.hasError('required') && myForm.get('phone')?.touched">
+                    <span>Este campo es obligatorio</span>
+                </div>
+            </div>-->
+            <div class="col-lg-12">
+                <h4>Descripción</h4>
+                <mat-form-field appearance="fill">
+                    <input matInput formControlName="phone" required>
+                </mat-form-field>
+                <div *ngIf="myForm.get('title')?.hasError('maxLength')">
+                    <span>Este campo debe tener como maximo 30 caracteres</span>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <button mat-raised-button color="warn" routerLink="/employee">Cancelar</button>
+                <button mat-raised-button color="primary" [disabled]="myForm.invalid" (click)=saveEmployee()>Agregar Tarea</button>
+            </div>
+        </form>
+    </div>
+</div>

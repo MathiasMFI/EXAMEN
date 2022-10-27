@@ -1,0 +1,28 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Walter Alberto Diaz",
+      "phone": "978024153",
+      "email": "hmendo81@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Daniela Lola Saavedra",
+      "phone": "967155005",
+      "email": "danisav66@gmail.com"
+    },
+    {
+      "name": "Test",
+      "email": "Test@test.com",
+      "phone": "1234567",
+      "id": 3
+    },
+    {
+      "name": "Test",
+      "email": "test2@test2.com",
+      "phone": "pasapfa",
+      "id": 4
+    }
+  ]
+}
