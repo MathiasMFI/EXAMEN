@@ -3,8 +3,22 @@
 }
 
 .example-margin{
+    height: 40px;
     margin-left: 10px;
 }
 .example-form-field {
     margin-right: 20px;
+}
+.description{
+    height: 50px;
+    width: 510px ;
+}
+.example-full-width{
+    width: 510px;
+}
+h4{
+    height: 30px;
+}
+.example-form-field{
+    height: 90px;
 }

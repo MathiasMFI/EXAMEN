@@ -3,7 +3,7 @@ mat-toolbar{
 }
 
 span{
-    margin: auto;
+
     text-align: center;
     color: rgb(253, 253, 253);
 }
@@ -13,7 +13,11 @@ span{
 }
 
 button{
+    
     margin: 0 10px;
     color: rgb(253, 253, 253);
 }
 
+.Title{
+    font-size: 150%;
+}
