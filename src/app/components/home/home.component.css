@@ -1,0 +1,11 @@
+.containerAccordion{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+  }
+  
+  .matAccordion{
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 100%;
+  }

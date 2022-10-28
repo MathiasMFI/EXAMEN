@@ -29,6 +29,10 @@ import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
+import { MatSelectModule } from '@angular/material/select';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatAccordion} from '@angular/material/expansion';
+import {CdkAccordionModule} from '@angular/cdk/accordion';
 
 @NgModule({
   declarations: [
@@ -50,10 +54,13 @@ import {MatIconModule} from '@angular/material/icon';
     MatRadioModule,
     MatDatepickerModule,
     MatButtonModule,
-        MatButtonToggleModule,
-        MatInputModule,
-        MatFormFieldModule,
-        MatNativeDateModule,MatMenuModule,MatIconModule,
+    MatButtonToggleModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatNativeDateModule,MatMenuModule,MatIconModule,
+    MatSelectModule,
+    MatExpansionModule,
+    CdkAccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

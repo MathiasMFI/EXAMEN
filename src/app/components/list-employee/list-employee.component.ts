@@ -3,15 +3,16 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { Employee } from 'src/app/models/employee';
 import { EmployeeService } from 'src/app/services/employee.service';
-
+import {FormControl} from '@angular/forms';
 @Component({
   selector: 'app-list-employee',
   templateUrl: './list-employee.component.html',
   styleUrls: ['./list-employee.component.css']
 })
 export class ListEmployeeComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'title', 'description', 'date', 'status','actions'];
+  displayedColumns: string[] = ['id', 'title', 'description', 'category', 'date', 'status','actions'];
   dataSource = new MatTableDataSource<Employee>();
+  disableSelect = new FormControl(false);
 
   @ViewChild(MatPaginator) paginator!:MatPaginator;
 

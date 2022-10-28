@@ -49,7 +49,7 @@
               </div>
               <div>
                 <mat-form-field appearance="fill" class="example-form-field">
-                  <mat-label>Fecha de Entrega</mat-label>
+                  <mat-label >Fecha de Entrega</mat-label>
                   <input matInput [matDatepicker]="datepicker">
                   <mat-hint>MM/DD/YYYY</mat-hint>
                   <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
@@ -62,19 +62,33 @@
                 </mat-form-field>
               </div>
             </div>
-
+            <div class="contenedorAñadirPlazo" id="contenedorAñadir">
+              <div>
+                <h4>Categoria</h4>
+              </div>
+              <div>
+                    <mat-form-field appearance="fill">
+                      <mat-label>Categoria</mat-label>
+                      <mat-select [disabled]="disableSelect.value">
+                        <mat-option value="option1">Tarea</mat-option>
+                        <mat-option value="option2">Ocio</mat-option>
+                        <mat-option value="option3">Extracurriculares</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+              </div>
+            </div>
             <div class="contenedorAñadirDescripcion" id="contenedorAñadir">
               <div>
                 <h4>Descripción</h4>
               </div>
               <div>
                 <mat-form-field style="width: 250px;" class="example-full-width" appearance="fill">
-                    <textarea style="resize: none;" class="description" matInput placeholder="Tarea sobre..."></textarea>
+                    <textarea style="resize: none;" formControlName="description" matInput placeholder="Tarea sobre..."></textarea>
                 </mat-form-field>
-                <div *ngIf="myForm.get('type')?.hasError('required') && myForm.get('type')?.touched">
+                <div *ngIf="myForm.get('description')?.hasError('required') && myForm.get('description')?.touched">
                     <span>Este campo es obligatorio</span>
                 </div>
-                <div *ngIf="myForm.get('type')?.hasError('maxLength')">
+                <div *ngIf="myForm.get('description')?.hasError('maxLength')">
                     <span>Este campo debe tener como maximo 30 caracteres</span>
                 </div>
               </div>

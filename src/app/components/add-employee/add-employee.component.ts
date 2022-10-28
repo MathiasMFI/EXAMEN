@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 import { Employee } from 'src/app/models/employee';
 import { EmployeeService } from 'src/app/services/employee.service';
 import {MatGridListModule} from '@angular/material/grid-list';
-
+import {FormControl} from '@angular/forms';
 /*@Component({
   selector: 'app-add-employee',
   templateUrl: './add-employee.component.html',
@@ -57,6 +57,7 @@ export class AddEmployeeComponent implements OnInit {
 })
 export class AddEmployeeComponent implements OnInit {
   myForm!: FormGroup;
+  disableSelect = new FormControl(false);
   constructor(
     private fb: FormBuilder,
     private employeeService: EmployeeService,
@@ -66,7 +67,8 @@ export class AddEmployeeComponent implements OnInit {
 
   ngOnInit(): void {
     this.myForm = this.fb.group({
-      title: ['', [Validators.required, Validators.maxLength(30)]]
+      title: ['', [Validators.required, Validators.maxLength(30)]],
+      description: ['', [Validators.required]],
 
     });
   }
