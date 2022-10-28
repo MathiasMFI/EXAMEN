@@ -4,63 +4,72 @@
     </div>
 </div>
 
-<div class="row">
-    <div class="col-lg-4">
+<div class="containerGeneral">
+  <div class="containerForm">
+    <div class="col-lg-12">
         <form [formGroup]="myForm">
-            <div class="col-lg-12">
+            <div class="contenedorAñadirTitulo" id="contenedorAñadir">
+              <div>
                 <h4>Título</h4>
+              </div>
+              <div>
                 <mat-form-field appearance="fill">
-                    <input matInput formControlName="title" required>
+                  <input matInput formControlName="title" required>
                 </mat-form-field>
                 <div *ngIf="myForm.get('title')?.hasError('required') && myForm.get('title')?.touched">
-                    <span>Este campo es obligatorio</span>
+                  <span>Este campo es obligatorio</span>
                 </div>
                 <div *ngIf="myForm.get('title')?.hasError('maxLength')">
-                    <span>Este campo debe tener como maximo 30 caracteres</span>
+                  <span>Este campo debe tener como maximo 30 caracteres</span>
                 </div>
+              </div>
             </div>
-            <div class="col-lg-12">
+
+            <div class="contenedorAñadirPrioridad" id="contenedorAñadir">
+              <div>
                 <h4>Prioridad</h4>
-                    <section class="example-section">
-                            <mat-radio-group aria-label="Select an option">
-                                <mat-radio-button class="example-margin" value="1">Alta</mat-radio-button>
-                                <mat-radio-button class="example-margin" value="2">Media</mat-radio-button>
-                                <mat-radio-button class="example-margin" value="3">Baja</mat-radio-button>
-                            </mat-radio-group>
-                    </section>
+              </div>
+              <div>
+                <section class="example-section">
+                  <mat-radio-group aria-label="Select an option">
+                      <mat-radio-button class="example-margin" value="1">Alta</mat-radio-button>
+                      <mat-radio-button class="example-margin" value="2">Media</mat-radio-button>
+                      <mat-radio-button class="example-margin" value="3">Baja</mat-radio-button>
+                  </mat-radio-group>
+                </section>
                 <div *ngIf="myForm.get('priority')?.hasError('required') && myForm.get('type')?.touched">
                     <span>Este campo es obligatorio</span>
                 </div>
+              </div>
             </div>
-            <div class="col-lg-12">
+
+            <div class="contenedorAñadirPlazo" id="contenedorAñadir">
+              <div>
                 <h4>Plazo</h4>
+              </div>
+              <div>
                 <mat-form-field appearance="fill" class="example-form-field">
-                    <mat-label>Fecha de Entrega</mat-label>
-                    <input matInput [matDatepicker]="datepicker">
-                    <mat-hint>MM/DD/YYYY</mat-hint>
-                    <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
-                    <mat-datepicker #datepicker>
-                      <mat-datepicker-actions>
-                        <button mat-button matDatepickerCancel>Cancel</button>
-                        <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
-                      </mat-datepicker-actions>
-                    </mat-datepicker>
-                  </mat-form-field>
-            </div>
-            <!--<div class="col-lg-12">
-                <h4>Recordatorio</h4>
-                <mat-form-field appearance="fill">
-                    <mat-label>Telefono</mat-label>
-                    <input matInput formControlName="phone" required>
+                  <mat-label>Fecha de Entrega</mat-label>
+                  <input matInput [matDatepicker]="datepicker">
+                  <mat-hint>MM/DD/YYYY</mat-hint>
+                  <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+                  <mat-datepicker #datepicker>
+                    <mat-datepicker-actions>
+                      <button mat-button matDatepickerCancel>Cancel</button>
+                      <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+                    </mat-datepicker-actions>
+                  </mat-datepicker>
                 </mat-form-field>
-                <div *ngIf="myForm.get('phone')?.hasError('required') && myForm.get('phone')?.touched">
-                    <span>Este campo es obligatorio</span>
-                </div>
-            </div>-->
-            <div class="col-lg-12">
+              </div>
+            </div>
+
+            <div class="contenedorAñadirDescripcion" id="contenedorAñadir">
+              <div>
                 <h4>Descripción</h4>
-                <mat-form-field class="example-full-width" appearance="fill">
-                    <textarea class="description" matInput placeholder="Tarea sobre..."></textarea>
+              </div>
+              <div>
+                <mat-form-field style="width: 250px;" class="example-full-width" appearance="fill">
+                    <textarea style="resize: none;" class="description" matInput placeholder="Tarea sobre..."></textarea>
                 </mat-form-field>
                 <div *ngIf="myForm.get('type')?.hasError('required') && myForm.get('type')?.touched">
                     <span>Este campo es obligatorio</span>
@@ -68,11 +77,16 @@
                 <div *ngIf="myForm.get('type')?.hasError('maxLength')">
                     <span>Este campo debe tener como maximo 30 caracteres</span>
                 </div>
+              </div>
             </div>
-            <div class="col-lg-12">
+
+            <div class="col-lg-12" id="contenedorButton">
                 <button mat-raised-button color="warn" routerLink="/employee">Cancelar</button>
-                <button mat-raised-button color="primary" [disabled]="myForm.invalid" (click)=saveEmployee() >Agregar Tarea</button> <!--routerLink="/employee"-->
+                <button style="margin-left: 10px" mat-raised-button color="primary" [disabled]="myForm.invalid" (click)=saveEmployee() >Agregar Tarea</button> <!--routerLink="/employee"-->
             </div>
+
         </form>
-    </div>
+
+  </div>
+
 </div>

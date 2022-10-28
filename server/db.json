@@ -34,6 +34,31 @@
       "priority": "Este es el Task5",
       "date": "27-10-2022",
       "type": "Terminado"
+    },
+    {
+      "id": 6,
+      "title": "Task6",
+      "priority": "Este es el Task6",
+      "date": "15-14-2022",
+      "type": "Terminado"
+    },
+    {
+      "id": 7,
+      "title": "Task7",
+      "priority": "Este es el Task7",
+      "date": "27-10-2022",
+      "type": "Terminado"
+    },
+    {
+      "id": 8,
+      "title": "Task8",
+      "priority": "Este es el Task8",
+      "date": "17-11-2022",
+      "type": "Progreso"
+    },
+    {
+      "id": 9,
+      "title": "Eduardo"
     }
   ]
 }

@@ -1,6 +1,8 @@
 /* Structure */
 /* Structure */
 table {
+  margin-top: 25px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -13,26 +15,26 @@ table {
   padding: 20px 50px;
 }
 
-.titleCenter{
-text-align: center;
+.titleCenter {
+  text-align: center;
 }
 
-.buttonAñadir{
-background-color: rgb(14, 13, 76);
-padding: 0 12px;
-border-radius: 5px;
-color:rgb(255, 255, 255);
-font-size:14px;
-font-weight: 400;
-outline: none;
+.buttonAñadir {
+  background-color: rgb(14, 13, 76);
+  padding: 0 12px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
 }
 
-.buttonAñadir:hover{
-background-color: rgb(225, 208, 255);
-transition: all 0.5s;
-color:rgb(28, 6, 43);
+.buttonAñadir:hover {
+  background-color: rgb(225, 208, 255);
+  transition: all 0.5s;
+  color: rgb(28, 6, 43);
 }
 
-.busquedaIcon{
-text-emphasis-color: black;
+.busquedaIcon {
+  text-emphasis-color: black;
 }

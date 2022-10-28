@@ -13,16 +13,17 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AddEmployeeComponent } from './components/add-employee/add-employee.component'
 import {MatRadioModule} from '@angular/material/radio';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import {MatGridListModule} from '@angular/material/grid-list';
 /*import { MatNativeDateModule } from '	@angular/material/core';*/
-import { MatButtonModule } from 
+import { MatButtonModule } from
     '@angular/material/button';
-import { MatButtonToggleModule } from 
+import { MatButtonToggleModule } from
     '@angular/material/button-toggle';
-import { MatInputModule } from 
+import { MatInputModule } from
     '@angular/material/input';
-import { MatFormFieldModule } from 
+import { MatFormFieldModule } from
     '@angular/material/form-field';
-import { MatNativeDateModule } from 
+import { MatNativeDateModule } from
     '@angular/material/core';
 
 @NgModule({
@@ -46,7 +47,7 @@ import { MatNativeDateModule } from
         MatButtonToggleModule,
         MatInputModule,
         MatFormFieldModule,
-        MatNativeDateModule
+        MatNativeDateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
