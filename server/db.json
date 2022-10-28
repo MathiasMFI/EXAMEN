@@ -23,8 +23,17 @@
     },
     {
       "id": 9,
-      "title": "sdsdsadas",
-      "description": "sdasdsad"
+      "title": "sdasd",
+      "description": "sdasdsadasd",
+      "status": "Progreso",
+      "category": "Ocio"
+    },
+    {
+      "id": 10,
+      "title": "sdasd",
+      "description": "sdasdasdas",
+      "status": "Progreso",
+      "category": "Ocio"
     }
   ]
 }

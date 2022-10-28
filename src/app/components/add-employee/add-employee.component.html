@@ -31,13 +31,13 @@
               </div>
               <div>
                 <section class="example-section">
-                  <mat-radio-group aria-label="Select an option">
-                      <mat-radio-button class="example-margin" value="1">Pendiente</mat-radio-button>
-                      <mat-radio-button class="example-margin" value="2">Progreso</mat-radio-button>
-                      <mat-radio-button class="example-margin" value="3">Terminado</mat-radio-button>
+                  <mat-radio-group formControlName="status"  >
+                      <mat-radio-button class="example-margin" value="Pendiente">Pendiente</mat-radio-button>
+                      <mat-radio-button class="example-margin" value="Progreso">Progreso</mat-radio-button>
+                      <mat-radio-button class="example-margin" value="Terminado">Terminado</mat-radio-button>
                   </mat-radio-group>
                 </section>
-                <div *ngIf="myForm.get('priority')?.hasError('required') && myForm.get('type')?.touched">
+                <div *ngIf="myForm.get('status')?.hasError('required') && myForm.get('status')?.touched">
                     <span>Este campo es obligatorio</span>
                 </div>
               </div>
@@ -48,7 +48,7 @@
                 <h4>Plazo</h4>
               </div>
               <div>
-                <mat-form-field appearance="fill" class="example-form-field">
+                <mat-form-field appearance="fill" class="example-form-field"  >
                   <mat-label >Fecha de Entrega</mat-label>
                   <input matInput [matDatepicker]="datepicker">
                   <mat-hint>MM/DD/YYYY</mat-hint>
@@ -56,9 +56,12 @@
                   <mat-datepicker #datepicker>
                     <mat-datepicker-actions>
                       <button mat-button matDatepickerCancel>Cancel</button>
-                      <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+                      <button mat-raised-button color="primary" matDatepickerApply formControlName="date">Apply</button>
                     </mat-datepicker-actions>
                   </mat-datepicker>
+                  <div *ngIf="myForm.get('date')?.hasError('required') && myForm.get('date')?.touched">
+                    <span>Este campo es obligatorio</span>
+                </div>
                 </mat-form-field>
               </div>
             </div>
@@ -67,13 +70,16 @@
                 <h4>Categoria</h4>
               </div>
               <div>
-                    <mat-form-field appearance="fill">
+                    <mat-form-field appearance="fill" >
                       <mat-label>Categoria</mat-label>
-                      <mat-select [disabled]="disableSelect.value">
-                        <mat-option value="option1">Tarea</mat-option>
-                        <mat-option value="option2">Ocio</mat-option>
-                        <mat-option value="option3">Extracurriculares</mat-option>
+                      <mat-select formControlName="category" >
+                        <mat-option value="Tarea" >Tarea</mat-option>
+                        <mat-option value="Ocio">Ocio</mat-option>
+                        <mat-option value="Extracurriculares">Extracurriculares</mat-option>
                       </mat-select>
+                      <div *ngIf="myForm.get('category')?.hasError('required') && myForm.get('category')?.touched">
+                        <span>Este campo es obligatorio</span>
+                    </div>
                     </mat-form-field>
               </div>
             </div>

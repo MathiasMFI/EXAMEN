@@ -69,7 +69,8 @@ export class AddEmployeeComponent implements OnInit {
     this.myForm = this.fb.group({
       title: ['', [Validators.required, Validators.maxLength(30)]],
       description: ['', [Validators.required]],
-
+      category: ['', [Validators.required]],
+      status: ['', [Validators.required]],
     });
   }
 
@@ -79,7 +80,8 @@ export class AddEmployeeComponent implements OnInit {
       title: this.myForm.get('title')?.value,
       description: this.myForm.get('description')?.value,
       date:this.myForm.get('date')?.value,
-      type:this.myForm.get('type')?.value,
+      status:this.myForm.get('status')?.value,
+      category: this.myForm.get('category')?.value,
     };
 
     this.employeeService.addEmployee(employee).subscribe({
