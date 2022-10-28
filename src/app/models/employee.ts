@@ -1,7 +1,7 @@
 export interface Employee {
   id: number;
   title: string;
-  /*date: Date;
-  priority: boolean;
-  type: string;*/
+  description: string;
+  date: Date;
+  type: boolean;
 }

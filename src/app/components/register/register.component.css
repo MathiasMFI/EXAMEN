@@ -1,0 +1,30 @@
+.contentRegister{
+  height: 600px;
+  width: 520px;
+  background-color: rgb(55,53,140);
+}
+
+.textRegister {
+  text-align: center;
+}
+
+.containerForm {
+  position: relative;
+}
+
+.formRegister {
+  position: absolute;
+  left: 50%;
+  transform: translate(-70%, 5%);
+}
+
+
+#contenedorRegistro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#contenedorRegistro > div {
+  width: 40%;
+}

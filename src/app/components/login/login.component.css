@@ -1,0 +1,23 @@
+.textLogin{
+  text-align: center;
+}
+
+.containerLogin{
+  position: relative;
+}
+
+.formLogin {
+  position: absolute;
+  left: 50%;
+  transform: translate(-70%, 5%);
+}
+
+#contenedorLogin {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#contenedorLogin > div {
+  width: 50%;
+}

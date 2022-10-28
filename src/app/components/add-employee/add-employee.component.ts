@@ -75,9 +75,9 @@ export class AddEmployeeComponent implements OnInit {
     const employee: Employee = {
       id: 0,
       title: this.myForm.get('title')?.value,
-      /*date: this.myForm.get('date')?.value,
-      priority: this.myForm.get('priority')?.value,
-      type: this.myForm.get('type')?.value,*/
+      description: this.myForm.get('description')?.value,
+      date:this.myForm.get('date')?.value,
+      type:this.myForm.get('type')?.value,
     };
 
     this.employeeService.addEmployee(employee).subscribe({

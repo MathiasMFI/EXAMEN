@@ -27,7 +27,9 @@ import { MatNativeDateModule } from
     '@angular/material/core';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
-    
+import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +53,7 @@ import { LoginComponent } from './components/login/login.component';
         MatButtonToggleModule,
         MatInputModule,
         MatFormFieldModule,
-        MatNativeDateModule,
+        MatNativeDateModule,MatMenuModule,MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

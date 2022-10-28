@@ -27,14 +27,14 @@
 
             <div class="contenedorAñadirPrioridad" id="contenedorAñadir">
               <div>
-                <h4>Prioridad</h4>
+                <h4>Estado</h4>
               </div>
               <div>
                 <section class="example-section">
                   <mat-radio-group aria-label="Select an option">
-                      <mat-radio-button class="example-margin" value="1">Alta</mat-radio-button>
-                      <mat-radio-button class="example-margin" value="2">Media</mat-radio-button>
-                      <mat-radio-button class="example-margin" value="3">Baja</mat-radio-button>
+                      <mat-radio-button class="example-margin" value="1">Pendiente</mat-radio-button>
+                      <mat-radio-button class="example-margin" value="2">Progreso</mat-radio-button>
+                      <mat-radio-button class="example-margin" value="3">Terminado</mat-radio-button>
                   </mat-radio-group>
                 </section>
                 <div *ngIf="myForm.get('priority')?.hasError('required') && myForm.get('type')?.touched">

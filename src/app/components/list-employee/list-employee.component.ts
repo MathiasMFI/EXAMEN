@@ -10,7 +10,7 @@ import { EmployeeService } from 'src/app/services/employee.service';
   styleUrls: ['./list-employee.component.css']
 })
 export class ListEmployeeComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'title', 'priority', 'date', 'type','actions'];
+  displayedColumns: string[] = ['id', 'title', 'description', 'date', 'status','actions'];
   dataSource = new MatTableDataSource<Employee>();
 
   @ViewChild(MatPaginator) paginator!:MatPaginator;

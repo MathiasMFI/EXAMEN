@@ -3,7 +3,6 @@ mat-toolbar{
 }
 
 span{
-
     text-align: center;
     color: rgb(253, 253, 253);
 }
@@ -13,11 +12,24 @@ span{
 }
 
 button{
-    
     margin: 0 10px;
     color: rgb(253, 253, 253);
 }
 
+.matmenuContainer{
+  background-color: rgb(126, 76, 9);
+}
+
+.matmenutext{
+  color:rgb(40, 14, 55);
+}
+
 .Title{
     font-size: 150%;
+}
+
+@media (max-width: 600px) {
+  .Title{
+    font-size: 15px;
+}
 }
