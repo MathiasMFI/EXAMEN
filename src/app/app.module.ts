@@ -25,7 +25,9 @@ import { MatFormFieldModule } from
     '@angular/material/form-field';
 import { MatNativeDateModule } from
     '@angular/material/core';
-
+import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
+    
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +35,8 @@ import { MatNativeDateModule } from
     ListEmployeeComponent,
     HomeComponent,
     AddEmployeeComponent,
+    RegisterComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
