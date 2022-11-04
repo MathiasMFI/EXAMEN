@@ -20,7 +20,7 @@
                   <span>Este campo es obligatorio</span>
                 </div>
                 <div *ngIf="myForm.get('title')?.hasError('maxLength')">
-                  <span>Este campo debe tener como maximo 30 caracteres</span>
+                  <span>Este campo debe tener como maximo 5 caracteres</span>
                 </div>
               </div>
             </div>
@@ -30,14 +30,14 @@
                 <h4>Estacionamiento</h4>
               </div>
               <div>
-                <mat-form-field style="width: 250px;" class="example-full-width" appearance="fill">
-                    <textarea style="resize: none;" formControlName="description" matInput placeholder=""></textarea>
+                <mat-form-field appearance="fill">
+                  <input matInput formControlName="title" required>
                 </mat-form-field>
-                <div *ngIf="myForm.get('description')?.hasError('required') && myForm.get('description')?.touched">
-                    <span>Este campo es obligatorio</span>
+                <div *ngIf="myForm.get('title')?.hasError('required') && myForm.get('title')?.touched">
+                  <span>Este campo es obligatorio</span>
                 </div>
-                <div *ngIf="myForm.get('description')?.hasError('maxLength')">
-                    <span>Este campo debe tener como maximo 30 caracteres</span>
+                <div *ngIf="myForm.get('title')?.hasError('maxLength')">
+                  <span>Este campo debe tener como maximo 70 caracteres</span>
                 </div>
               </div>
             </div>
