@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  basePatch: 'http://localhost:8080/employees',
+  basePatch: 'http://localhost:4250/espacios',
 };
 
 /*
