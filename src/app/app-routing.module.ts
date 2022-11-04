@@ -1,17 +1,14 @@
-import { AddEmployeeComponent } from './components/add-employee/add-employee.component';
-import { ListEmployeeComponent } from './components/list-employee/list-employee.component';
+import { NewEspaciosComponent } from './components/new-espacios/new-espacios.component';
+import { ListEspacioComponent } from './components/list-espacios/list-espacios.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { RegisterComponent } from './components/register/register.component';
-import { LoginComponent } from './components/login/login.component';
+
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
-  {path: 'register', component: RegisterComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'employee', component: ListEmployeeComponent},
-  {path: 'add', component: AddEmployeeComponent},
+  {path: 'espacio', component: ListEspacioComponent},
+  {path: 'new', component: NewEspaciosComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'}
 
 ];

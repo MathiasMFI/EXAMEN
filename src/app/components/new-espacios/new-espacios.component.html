@@ -1,0 +1,105 @@
+<div class="row">
+    <div class="col-lg-6">
+        <h2>Añadir Espacio</h2>
+    </div>
+</div>
+
+<div class="containerGeneral">
+  <div class="containerForm">
+    <div class="col-lg-12">
+        <form [formGroup]="myForm">
+            <div class="contenedorAñadirID" id="contenedorAñadir">
+              <div>
+                <h4>ID</h4>
+              </div>
+              <div>
+                <mat-form-field appearance="fill">
+                  <input matInput formControlName="title" required>
+                </mat-form-field>
+                <div *ngIf="myForm.get('title')?.hasError('required') && myForm.get('title')?.touched">
+                  <span>Este campo es obligatorio</span>
+                </div>
+                <div *ngIf="myForm.get('title')?.hasError('maxLength')">
+                  <span>Este campo debe tener como maximo 30 caracteres</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contenedorAñadirEstacionamiento" id="contenedorAñadir">
+              <div>
+                <h4>Estacionamiento</h4>
+              </div>
+              <div>
+                <mat-form-field style="width: 250px;" class="example-full-width" appearance="fill">
+                    <textarea style="resize: none;" formControlName="description" matInput placeholder=""></textarea>
+                </mat-form-field>
+                <div *ngIf="myForm.get('description')?.hasError('required') && myForm.get('description')?.touched">
+                    <span>Este campo es obligatorio</span>
+                </div>
+                <div *ngIf="myForm.get('description')?.hasError('maxLength')">
+                    <span>Este campo debe tener como maximo 30 caracteres</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contenedorAñadirPiso" id="contenedorAñadir">
+              <div>
+                <h4>Piso</h4>
+              </div>
+              <div>
+                <mat-form-field appearance="fill">
+                  <input matInput formControlName="title" required>
+                </mat-form-field>
+                <div *ngIf="myForm.get('title')?.hasError('required') && myForm.get('title')?.touched">
+                  <span>Este campo es obligatorio</span>
+                </div>
+                <div *ngIf="myForm.get('title')?.hasError('maxLength')">
+                  <span>Este campo debe tener como maximo 30 caracteres</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contenedorAñadirNúmero" id="contenedorAñadir">
+              <div>
+                <h4>Número</h4>
+              </div>
+              <div>
+                <mat-form-field appearance="fill">
+                  <input matInput formControlName="title" required>
+                </mat-form-field>
+                <div *ngIf="myForm.get('title')?.hasError('required') && myForm.get('title')?.touched">
+                  <span>Este campo es obligatorio</span>
+                </div>
+                <div *ngIf="myForm.get('title')?.hasError('maxLength')">
+                  <span>Este campo debe tener como maximo 30 caracteres</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contenedorAñadirEstado" id="contenedorAñadir">
+              <div>
+                <h4>Estado (Disponible/Ocupado)</h4>
+              </div>
+              <div>
+                <mat-form-field appearance="fill">
+                  <input matInput formControlName="title" required>
+                </mat-form-field>
+                <div *ngIf="myForm.get('title')?.hasError('required') && myForm.get('title')?.touched">
+                  <span>Este campo es obligatorio</span>
+                </div>
+                <div *ngIf="myForm.get('title')?.hasError('maxLength')">
+                  <span>Este campo debe tener como maximo 30 caracteres</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12" id="contenedorButton">
+                <button mat-raised-button color="warn" routerLink="/espacio">Cancelar</button>
+                <button style="margin-left: 10px" mat-raised-button color="primary" (click)=GuardarEspacio() routerLink="/espacio" >Añadir Espacio</button>
+            </div>
+
+        </form>
+
+  </div>
+
+</div>

@@ -6,11 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { ListEmployeeComponent } from './components/list-employee/list-employee.component';
+import { ListEspacioComponent } from './components/list-espacios/list-espacios.component';
 import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AddEmployeeComponent } from './components/add-employee/add-employee.component'
+import { NewEspaciosComponent } from './components/new-espacios/new-espacios.component'
 import {MatRadioModule} from '@angular/material/radio';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import {MatGridListModule} from '@angular/material/grid-list';
@@ -25,8 +25,6 @@ import { MatFormFieldModule } from
     '@angular/material/form-field';
 import { MatNativeDateModule } from
     '@angular/material/core';
-import { RegisterComponent } from './components/register/register.component';
-import { LoginComponent } from './components/login/login.component';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
@@ -38,11 +36,9 @@ import {CdkAccordionModule} from '@angular/cdk/accordion';
   declarations: [
     AppComponent,
     NavbarComponent,
-    ListEmployeeComponent,
+    ListEspacioComponent,
     HomeComponent,
-    AddEmployeeComponent,
-    RegisterComponent,
-    LoginComponent,
+    NewEspaciosComponent,
   ],
   imports: [
     BrowserModule,

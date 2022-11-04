@@ -1,39 +1,18 @@
 {
-  "employees": [
+    "espacios": [
     {
-      "id": 1,
-      "title": "Task 1",
-      "description": "Este es el Task1",
-      "date": "14-10-2022",
-      "status": "Progreso"
+    "id": 1,
+    "estacionamiento": "San Borja",
+    "piso": 1,
+    "numero": "34-A",
+    "estado": "ocupado"
     },
     {
-      "id": 7,
-      "title": "Task7",
-      "description": "Este es el Task7",
-      "date": "27-10-2022",
-      "status": "Terminado"
-    },
-    {
-      "id": 8,
-      "title": "Task8",
-      "description": "Este es el Task8",
-      "date": "17-11-2022",
-      "status": "Progreso"
-    },
-    {
-      "id": 9,
-      "title": "sdasd",
-      "description": "sdasdsadasd",
-      "status": "Progreso",
-      "category": "Ocio"
-    },
-    {
-      "id": 10,
-      "title": "sdasd",
-      "description": "sdasdasdas",
-      "status": "Progreso",
-      "category": "Ocio"
+    "id": 1,
+    "estacionamiento": "San Miguel",
+    "piso": 2,
+    "numero": "35-B",
+    "estado": "disponible"
     }
-  ]
-}
+    ]
+   }
